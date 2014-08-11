@@ -1,0 +1,13 @@
+<html>
+<body>
+Videos:
+{% for video in videos %}
+<div>
+<iframe type="text/html" width="640" height="390"
+	src="{{ video.embed_url }}"
+  	frameborder="0"
+ ></iframe>
+</div>
+{% endfor %}
+</body>
+</html>
